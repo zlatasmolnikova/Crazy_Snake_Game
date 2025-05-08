@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &876799007705280601
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2983420695776918462}
+  - component: {fileID: 3966405413450636533}
+  m_Layer: 0
+  m_Name: CardFactory
+  m_TagString: CardFactory
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2983420695776918462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876799007705280601}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3966405413450636533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876799007705280601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c4d97dfe1311bb4ba2b74e0e4e20be7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cardAvatarPrefab: {fileID: 7607651127985075185, guid: dab00378d399c7f45b22e77ac0dcc7b2, type: 3}
+  piercingTexture: {fileID: 2800000, guid: 12ff479aa9c7474448c2e1a694cd1717, type: 3}
+  bouncinessIncreaseTexture: {fileID: 2800000, guid: a41c6a6e5cccfd847bee686d3f59304b, type: 3}
+  damageIncreaseConstantTexture: {fileID: 2800000, guid: 2a9f22f65f1eac94d8bcf8d82702ecc6, type: 3}
+  gunShotTexture: {fileID: 2800000, guid: 811c9ca9f08fc6943a07e7bf34a8610a, type: 3}
+  explosionTexture: {fileID: 2800000, guid: c0f91c7d290f39244975f4e8e282b243, type: 3}
+  grenadeTexture: {fileID: 2800000, guid: c86e7d2e5b1e33d49842e4e6a1c117c5, type: 3}
+  AscendTreeTexture: {fileID: 2800000, guid: c8eb7d544ebd85c49b7e4425ddac66f7, type: 3}
+  AscendTreeTwiceTexture: {fileID: 2800000, guid: 972a176f8e4990640860e084c7a7f1a8, type: 3}
+  TrackerTexture: {fileID: 2800000, guid: cba07bd5b78b3914eb683e74e313124f, type: 3}
+  CanonBallTexture: {fileID: 2800000, guid: 68035c25d7ba3fe4f8a3b9833826ef04, type: 3}
