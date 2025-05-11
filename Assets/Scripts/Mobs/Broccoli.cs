@@ -75,7 +75,6 @@ public class Broccoli : CreatureBase
     {
         if (wasInAir && other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("boom");
             PerformAttack();
             Die();
         }

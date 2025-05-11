@@ -20,10 +20,7 @@ public class CardInventoryUI : MonoBehaviour
     private void Start()
     {
         player = FindObjectOfType<PlayerComponent>();
-        Debug.Log($"Player in Card Inventory: {player}");
-        Debug.Log(gameObject.activeSelf);
         gameObject.SetActive(false);
-        Debug.Log(gameObject.activeSelf);
         
     }
     

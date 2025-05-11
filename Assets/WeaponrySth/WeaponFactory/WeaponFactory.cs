@@ -8,9 +8,6 @@ using UnityEngine.UIElements;
 public class WeaponFactory : MonoBehaviour
 {
     [SerializeField]
-    private GameObject laggyPistolPrefab;
-
-    [SerializeField]
     private GameObject cheapPistolPrefab;
 
     [SerializeField]
@@ -61,11 +58,7 @@ public class WeaponFactory : MonoBehaviour
         {
             return InsertRandomSpellsInWeaponLevelOne(canonPrefab, position, generator.NextDouble() < 0.5 ? Spell.CanonBall : Spell.Grenade); // 0.2 * 0.9
         }
-        if (UnityEngine.Random.value < 0.5f)
-        {
-            return InsertRandomSpellsInWeaponLevelOne(cheapPistolPrefab, position, Spell.GunShot);   // 0.4 * 0.9
-        }
-        return InsertRandomSpellsInWeaponLevelOne(laggyPistolPrefab, position, Spell.GunShot);       // 0.4 * 0.9
+        return InsertRandomSpellsInWeaponLevelOne(cheapPistolPrefab, position, Spell.GunShot);
     }
 
     private GameObject InsertRandomSpellsInWeaponLevelOne(GameObject weaponPrefab, Vector3 position, Spell? firstSpell)

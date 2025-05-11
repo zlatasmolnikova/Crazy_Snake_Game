@@ -1,8 +1,4 @@
-using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using UnityEditor.Build;
-using UnityEditor.ShaderKeywordFilter;
 using UnityEngine;
 
 public class MagicWeapon : MonoBehaviour, IInventoryItem

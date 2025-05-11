@@ -93,8 +93,6 @@ public class Tracker : ProjectileBase, IHurtable
             }
         }
 
-        Debug.Log(closestObject);
-
         if (closestObject != null)
         {
             var direction = closestObject.transform.position - transform.position;

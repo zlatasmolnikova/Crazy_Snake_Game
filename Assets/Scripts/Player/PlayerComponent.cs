@@ -63,9 +63,8 @@ public class PlayerComponent : MonoBehaviour, IHurtable, IUser, IPushable, IPlac
         health -= damageInfo.Amount;
         if (health < 0)
         {
-            Debug.Log("stop shooting! I`m already dead");
-            SceneManager.UnloadSceneAsync("SampleScene");
-            SceneManager.LoadSceneAsync("Menu");
+            //SceneManager.UnloadSceneAsync("SampleScene");
+            //SceneManager.LoadSceneAsync("Menu");
             
         }
         else
