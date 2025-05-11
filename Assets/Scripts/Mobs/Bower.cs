@@ -13,11 +13,10 @@ public class Bower : CreatureBase, IMob
     private const float ViewDistance = 30f;
     
     public StateMachine StateMachine { get; set; }
-    public float MaxHealth;
+    public new float MaxHealth;
     public float CriticalHealthPercentage = 30f;
 
     [SerializeField] private LayerMask obstructionMask;
-    private float fieldOfViewAngle = 90f;
 
     private float criticalDistance = 8f;
 

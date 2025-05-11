@@ -9,7 +9,6 @@ public class MicroAppleEnemyDamageDetector : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject);
         OnTriggerEvent?.Invoke(other);
     }
 }

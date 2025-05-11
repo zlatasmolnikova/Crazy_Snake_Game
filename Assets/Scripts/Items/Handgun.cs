@@ -30,7 +30,7 @@ public class Handgun : MonoBehaviour, IInventoryItem
 
     private Animator animator;
 
-    private ParticleSystem particleSystem;
+    private new ParticleSystem particleSystem;
 
     private Vector3 effectPosition;
 

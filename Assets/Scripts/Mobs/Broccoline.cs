@@ -11,9 +11,8 @@ public class Broccoline : CreatureBase
     private GameObject player;
     private Rigidbody rb;
     
-    private const float ViewAngle = 110f;
+    private new const float ViewAngle = 110f;
     private const float ViewDistance = 20f;
-    private const float MaxSpeed = 10f;
     private const float Cooldown = 5f;
     private const float ProjectileSpeed = 5f;
     private const int ScatterWaves = 3;

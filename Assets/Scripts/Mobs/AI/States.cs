@@ -166,8 +166,6 @@ public class AttackState : IState
 public class ChaseState : IState
 {
     private IMob mob;
-    private float chaseTimer;
-    private float maxChaseTime = 30f;
 
     public ChaseState(IMob mob)
     {

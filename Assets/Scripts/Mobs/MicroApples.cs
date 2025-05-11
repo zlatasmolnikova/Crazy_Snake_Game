@@ -13,7 +13,7 @@ public class MicroApples : CreatureBase, IMob
     private GameObject player { get; set; }
     private const float AttackDistance = 2f;
     public StateMachine StateMachine { get; set; }
-    public float MaxHealth;
+    public new float MaxHealth;
     public float CriticalHealthPercentage = 30f;
 
     [SerializeField] private LayerMask obstructionMask;

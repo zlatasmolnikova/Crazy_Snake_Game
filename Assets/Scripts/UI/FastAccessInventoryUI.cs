@@ -21,7 +21,6 @@ public class FastAccessInventoryUI : MonoBehaviour
     void Start()
     {
         player = FindObjectOfType<PlayerComponent>();
-        Debug.Log($"Player in Inventory: {player}");
         LoadInventory();
         player.Inventory.OnCnangeIndex.AddListener(OnCnangeIndex);
         player.Inventory.OnPickUpItem.AddListener(OnPickUpItem);
@@ -54,7 +53,6 @@ public class FastAccessInventoryUI : MonoBehaviour
 
     private void OnPickUpItem(int index)
     {
-        Debug.Log(ItemImages[index]);
         var sprite = player.Inventory.SelectedItem.GetItemAvatarSprite();
         if (sprite != null)
         {

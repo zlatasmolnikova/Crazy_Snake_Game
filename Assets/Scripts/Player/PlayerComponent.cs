@@ -61,7 +61,6 @@ public class PlayerComponent : MonoBehaviour, IHurtable, IUser, IPushable, IPlac
     public void TakeDamage(DamageInfo damageInfo)
     {
         health -= damageInfo.Amount;
-        Debug.Log($"Player Hurt: health = {health}");
         if (health < 0)
         {
             Debug.Log("stop shooting! I`m already dead");
@@ -128,7 +127,6 @@ public class PlayerComponent : MonoBehaviour, IHurtable, IUser, IPushable, IPlac
         // should be remade to check chosest item first
         foreach( var item in Physics.OverlapSphere(transform.position, ItemPickUpRadius))
         {
-            Debug.Log(item);
             if (item.TryGetComponent<ItemAvatar>(out var itemAvatar))
             {
                 if (inventory.SelectedItem == null)
@@ -143,7 +141,6 @@ public class PlayerComponent : MonoBehaviour, IHurtable, IUser, IPushable, IPlac
             {
                 if (CardInventory.TryAddCard(cardAvatar.Card))
                 {
-                    Debug.Log(cardAvatar.Card);
                     cardAvatar.PickUp();
                     return true;
                 }

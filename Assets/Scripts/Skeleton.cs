@@ -14,7 +14,7 @@ public class Skeleton : CreatureBase, IMob, IPlacer
     private const float ViewDistance = 30f;
 
     public StateMachine StateMachine { get; set; }
-    public float MaxHealth;
+    public new float MaxHealth;
     public float CriticalHealthPercentage = 30f;
 
     [SerializeField] private LayerMask obstructionMask;

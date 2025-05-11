@@ -30,8 +30,6 @@ public class Turret : MonoBehaviour, IUser, IHurtable
 
     private Rigidbody rb;
 
-    private IInventoryItem currentItem = null;
-
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();

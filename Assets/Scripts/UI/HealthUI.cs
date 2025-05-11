@@ -37,7 +37,6 @@ public class HealthUI : MonoBehaviour
         if (user is null)
         {
             user = FindObjectOfType<PlayerComponent>();
-            Debug.Log($"Player in Health: {user}");
         }
         healthObject = Instantiate(healthObjectPrefab, transform);
         
