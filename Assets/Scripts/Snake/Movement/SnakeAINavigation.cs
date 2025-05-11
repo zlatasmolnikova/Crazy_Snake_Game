@@ -28,12 +28,13 @@ public class AINavigation : MonoBehaviour
 
     private void UpdateDestination()
     {
-        // if (CheckCanSeePlayer())
-        // {
-        //     agent.SetDestination(player.position);
-        // }
-        if (agent.remainingDistance <= stoppingDistance)
-            TrySetNewDestination();
+        if (agent != null && agent.isActiveAndEnabled && agent.isOnNavMesh)
+        {
+            if (agent.remainingDistance <= stoppingDistance)
+            {
+                TrySetNewDestination();
+            }
+        }
     }
 
     private bool CheckCanSeePlayer()
