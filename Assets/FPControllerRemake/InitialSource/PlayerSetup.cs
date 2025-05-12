@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
+using UnityEditor;
 using UnityEngine;
 
 // By B0N3head
@@ -51,7 +52,6 @@ public class PlayerSetup : Editor
         }
     }
 
-
     // Mashup of code from ctwheels & Leslie-Young by B0N3head 
     // Dw about understanding this, it's just a tool for creating tags in editor for unity
     public void createTag(string tagName)
@@ -84,3 +84,4 @@ public class PlayerSetup : Editor
         }
     }
 }
+#endif

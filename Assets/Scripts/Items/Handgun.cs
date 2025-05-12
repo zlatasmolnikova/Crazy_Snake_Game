@@ -26,14 +26,7 @@ public class Handgun : MonoBehaviour, IInventoryItem
 
     private readonly float range = 100;
 
-    private SoundController soundController;
-
     private Animator animator;
-
-    private new ParticleSystem particleSystem;
-
-    private Vector3 effectPosition;
-
 
     private float cooldown = 1f / 3f;
     private float lastShotTime;

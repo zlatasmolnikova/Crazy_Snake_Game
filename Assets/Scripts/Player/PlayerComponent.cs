@@ -1,12 +1,7 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
 using Environment;
 using Items;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
@@ -63,9 +58,9 @@ public class PlayerComponent : MonoBehaviour, IHurtable, IUser, IPushable, IPlac
         health -= damageInfo.Amount;
         if (health < 0)
         {
-            //SceneManager.UnloadSceneAsync("SampleScene");
-            //SceneManager.LoadSceneAsync("Menu");
-            
+            SceneManager.UnloadSceneAsync("SampleScene");
+            SceneManager.LoadSceneAsync("Menu");
+
         }
         else
         {
