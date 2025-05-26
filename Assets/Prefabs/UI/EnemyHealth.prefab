@@ -85,7 +85,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &3224375259579607234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,7 +115,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ef314bf8fa0e284a8ae5afe52892c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  user: {fileID: 0}
   healthObjectPrefab: {fileID: 7145560248613855716, guid: 439436cef4ebee44eab3489ca1a3326a, type: 3}
   decreaseColor: {r: 0.35686275, g: 0.33963695, b: 0.054901958, a: 1}
   increaseColor: {r: 0.10814355, g: 1, b: 0.020754695, a: 1}

@@ -17,6 +17,9 @@ public class PlayerComponent : MonoBehaviour, IHurtable, IUser, IPushable, IPlac
     [SerializeField]
     private Transform handTransform;
 
+    [SerializeField]
+    public GameObject GameOverScreen;
+
     public Transform HandTransform => handTransform;
 
     [SerializeField]
@@ -58,9 +61,12 @@ public class PlayerComponent : MonoBehaviour, IHurtable, IUser, IPushable, IPlac
         health -= damageInfo.Amount;
         if (health < 0)
         {
-            SceneManager.UnloadSceneAsync("SampleScene");
-            SceneManager.LoadSceneAsync("Menu");
+            GameOverScreen.SetActive(true);
 
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+
+            gameObject.SetActive(false);
         }
         else
         {
